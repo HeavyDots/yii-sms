@@ -13,6 +13,12 @@ class TwilioSMSProvider extends BaseSMSProvider {
     
     $CURLOPT_SSL_VERIFYPEER=true;
     
+    /**
+     * In case you're doing local testing and have issues with curl and SSL 
+     * you can add DISABLE_CURLOPT_SSL_VERIFYPEER with value of false in Yii's params 
+     * and it will disable CURLOPT_SSL_VERIFYPEER option.
+     * Note: This is not advised to do in production environment for security reasons.
+     */
     if (isset(Yii::app()->params['DISABLE_CURLOPT_SSL_VERIFYPEER'])) {
       $CURLOPT_SSL_VERIFYPEER=false;
     }
