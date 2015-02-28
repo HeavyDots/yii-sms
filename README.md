@@ -8,8 +8,9 @@ This extension allows you to send SMS from Yii using different SMS providers and
 
 Twilio: https://github.com/twilio/twilio-php
 
-Note: in TwilioSMSProvider.php file you can see where it looks for the library and adjust it in case you've placed it somewhere else.
-$twilio_path=dirname(__FILE__).'/../../../vendor/twilio-php/Services/Twilio.php';
+Note: in TwilioSMSProvider.php file you can see where it looks for the library and adjust it in case you've placed it somewhere else.  
+
+    $twilio_path=dirname(__FILE__).'/../../../vendor/twilio-php/Services/Twilio.php';
 
 3) Configure in main.php
 
